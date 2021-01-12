@@ -1,4 +1,5 @@
 @extends('layouts.dashboard.app')
+
 @section('content')
 
     <div class="content-wrapper">
@@ -17,19 +18,7 @@
             <div class="row">
 
                 {{-- categories--}}
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                      <span class="info-box-icon bg-aqua"><i class="fa fa-shopping-bag"></i></span>
-
-                      <div class="info-box-content">
-                        <span class="info-box-text">@lang('site.categories')</span>
-                        <span class="info-box-number">{{ $categories_count }}</span>
-                      </div>
-                      <a href="{{ route('dashboard.categories.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                    <!-- /.info-box -->
-                  </div>
-                 {{-- <div class="col-lg-3 col-xs-6">
+                <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-aqua">
                         <div class="inner">
                             <h3>{{ $categories_count }}</h3>
@@ -42,9 +31,9 @@
                         <a href="{{ route('dashboard.categories.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
- --}}
+
                 {{--products--}}
-               {{--  <div class="col-lg-3 col-xs-6">
+                <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-green">
                         <div class="inner">
                             <h3>{{ $products_count }}</h3>
@@ -56,24 +45,10 @@
                         </div>
                         <a href="{{ route('dashboard.products.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
-                </div> --}}
-
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box">
-                      <span class="info-box-icon bg-aqua"><i class="fa fa-shopping-cart"></i></span>
-
-                      <div class="info-box-content">
-                        <span class="info-box-text">@lang('site.products') </span>
-                        <span class="info-box-number">{{ $products_count }}</span>
-                      </div>
-                      <a href="{{ route('dashboard.products.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                    <!-- /.info-box -->
-                  </div>
-
+                </div>
 
                 {{--clients--}}
-                {{-- <div class="col-lg-3 col-xs-6">
+                <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-red">
                         <div class="inner">
                             <h3>{{ $clients_count }}</h3>
@@ -86,22 +61,9 @@
                         <a href="{{ route('dashboard.clients.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
- --}}
- <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-aqua"><i class="fa fa-user"></i></span>
-
-      <div class="info-box-content">
-        <span class="info-box-text">@lang('site.clients') </span>
-        <span class="info-box-number">{{ $clients_count }}</span>
-      </div>
-      <a href="{{ route('dashboard.clients.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
-    </div>
-    <!-- /.info-box -->
-  </div>
 
                 {{--users--}}
-                {{-- <div class="col-lg-3 col-xs-6">
+                <div class="col-lg-3 col-xs-6">
                     <div class="small-box bg-yellow">
                         <div class="inner">
                             <h3>{{ $users_count }}</h3>
@@ -114,20 +76,6 @@
                         <a href="{{ route('dashboard.users.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
- --}}
- <div class="col-md-3 col-sm-6 col-xs-12">
-    <div class="info-box">
-      <span class="info-box-icon bg-aqua"><i class="fa fa-users"></i></span>
-
-      <div class="info-box-content">
-        <span class="info-box-text">@lang('site.users') </span>
-        <span class="info-box-number">{{ $users_count }}</span>
-      </div>
-      <a href="{{ route('dashboard.users.index') }}" class="small-box-footer">@lang('site.read') <i class="fa fa-arrow-circle-right"></i></a>
-    </div>
-    <!-- /.info-box -->
-  </div>
-
 
             </div><!-- end of row -->
 
