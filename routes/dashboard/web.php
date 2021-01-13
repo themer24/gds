@@ -7,6 +7,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
             Route::get('/', 'WelcomeController@index')->name('welcome');
 
+
             //category routes
             Route::resource('categories', 'CategoryController')->except(['show']);
 
