@@ -36,7 +36,7 @@
 <div class="login-box">
 
     <div class="login-logo">
-        <a href="../../index2.html"><b>Admin</b>LTE</a>
+        <a href="../../index2.html"><b>Gestion de stock</b></a>
     </div><!-- end of login lgo -->
 
     <div class="login-box-body">
