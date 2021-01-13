@@ -2,7 +2,7 @@
 
 @section('content')
 
-   {{--  <div class="content-wrapper">
+    <div class="content-wrapper">
 
         <section class="content-header">
 
@@ -92,12 +92,12 @@
 
         </section><!-- end of content -->
 
-    </div><!-- end of content wrapper --> --}}
+    </div><!-- end of content wrapper -->
 
 
 @endsection
 
-{{-- @push('scripts')
+@push('scripts')
 
     <script>
 
@@ -124,4 +124,4 @@
         });
     </script>
 
-@endpush --}}
+@endpush
